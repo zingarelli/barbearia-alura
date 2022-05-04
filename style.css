@@ -1,0 +1,300 @@
+/* Conteúdo compartilhado por todas as páginas */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.box-menu{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;    
+}
+
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* Página inicial */
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* a fonte será o dobro da fonte definida nas tags na qual ela é filha */
+    margin: 0 0 1em; /* tamanho da margem será o mesmo da fonte nesta classe (que é 2em) */
+    clear: left; /* para interromper os efeitos do float left */
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.google-maps{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width:640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5em;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.itens::before{
+    content: '\2605  ';
+}
+
+.imagem-beneficios{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+/* Página de Produtos */
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px 35px;
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{
+    border-color: #088C19;
+}
+
+.produtos li:hover h2{
+    font-size: 32px;
+}
+
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* formulário de contato */
+form, table{
+    margin: 20px 40px;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px
+}
+
+form fieldset{
+    margin: 0 0 20px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%; 
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1.5s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+thead, tfoot{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000000;
+    padding: 8px 15px;  
+}
+
+/* estilizando para dispositivos móveis */
+@media screen and (max-width: 480px){
+    /* index.html */
+    .box-menu, .principal, .conteudo-beneficios, .google-maps, .video{
+        width: auto;
+    }
+
+    .principal, .beneficios{
+        padding: 3em 1em;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios{
+        margin: 3% 0;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    /* restante ficou como exercício. */
+    /* Vai ficar uma bagunça aqui, mas deixei assim para separar o que estou fazendo como exercício */
+    /* depois junto tudo */
+
+    /* produtos.html */
+    .produtos{
+        width: auto;
+    }
+
+    .produtos li{
+        display: block;
+        margin: 3% 1.5%;
+        width: auto;
+    }
+
+    /* contato.html */
+    form, table{
+        margin: 5%;
+    }
+
+    .enviar{
+        width: auto;
+        padding: 15px
+    }
+}

@@ -1,0 +1,54 @@
+/* versão inicial de CSS somente para a index, para fins didáticos durante as aulas */
+#banner {
+    width: 100%;
+}
+
+.principal {
+    background: #CCCCCC;
+    padding: 30px;
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+p, .titulo-centralizado {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong {
+    color: #C78C19;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-left: 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.itens{
+    margin-top: 10px;
+}
+
+.imgbeneficios {
+    width: 50%;
+}
